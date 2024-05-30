@@ -6,100 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIA Hacks 2024</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
 
-    <div class="header">
-        <a href="">Schedule</a>
-        <a href="">Sponsors</a>
-        <a href="">FAQ</a>
-        <a href="">Team</a>
-        <a href="">Sign Up</a>
-        <a href="">Contact Us</a>
-    </div>
-
-    <div class="stars">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-      </div>
-
-    <div class="main">
-        <h1>GIA Hacks 2024</h1>
-        <img src="/GIA-Hacks-2024/assets/images/hackqrcode.png" alt="">
-        <a href="">Sign Up Now!</a>
-        <h2>About Us</h2>
-        <p>The GIA Club Chapter at Fremont High School are the hosts for the GIAHacks event. Our aim is to incorporate
-            school students in order to expose them to the latest technologies and the tech community, thereby sparking
-            their interest in the field. We also want to fight global issues in the world.</p>
-    </div>
-
-    <div class="time_line">
-        <h2>Time Line</h2>
-        <p>Monday: Check-In and Opening Presentation at 8:00pm</p>
-        <p>Monday-Tuesday: Organize and Brainstorm Ideas</p>
-        <p>Tuesday: Progress CheckCheck-In and presentation at 8:00pm</p>
-        <p>Tuesday-Friday: Work on coding the project</p>
-        <p>Wednesday: Meeting & Check-In On Progress. Mini Game #1 at 9:00pm.</p>
-        <p>Thursday: Progress CheckCheck-In and presentation at 8:00pm</p>
-        <p>Wednesday-Friday: Continue to work on coding the project</p>
-        <p>Friday: Film a video and make a slide presentation. Mini Game #2 at 9:00pm.</p>
-        <p>Friday: Finish working on coding the project</p>
-        <p>Saturday: 9:00 am Check-In Meeting</p>
-        <p>Saturday: 9:30am - 2:00pm: Work on completing Project and creating presentation to submit by 2pm.</p>
-        <p>Saturday: 8:00pm Spnosored Mini Event</p>
-        <p>Sunday 8:00pm Award Ceramony</p>
+    <div id="bg-wrap">
+        <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+                    <stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop>
+                    <stop offset="100%" stop-color="rgba(255, 0, 255, 0)" z-index="-1"></stop>
+                </radialGradient>
+                <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+                    <stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop>
+                    <stop offset="100%" stop-color="rgba(255, 255, 0, 0)" z-index="-1"></stop>
+                </radialGradient>
+                <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+                    <stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop>
+                    <stop offset="100%" stop-color="rgba(0, 255, 255, 0)" z-index="-1"></stop>
+                </radialGradient>
+                <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate>
+                    <stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop>
+                    <stop offset="100%" stop-color="rgba(0, 255, 0, 0)" z-index="-1"></stop>
+                </radialGradient>
+                <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
+                    <stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop>
+                    <stop offset="100%" stop-color="rgba(0,0,255, 0)" z-index="-1"></stop>
+                </radialGradient>
+                <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
+                    <stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop>
+                    <stop offset="100%" stop-color="rgba(255,0,0, 0)" z-index="-1"></stop>
+                </radialGradient>
+            </defs>
+            <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)"
+                transform="rotate(334.41 50 50)">
+                <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+                <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s"
+                    repeatCount="indefinite"></animateTransform>
+            </rect>
+            <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)"
+                transform="rotate(255.072 50 50)">
+                <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+                <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+                <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s"
+                    repeatCount="indefinite"></animateTransform>
+            </rect>
+            <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)"
+                transform="rotate(139.903 50 50)">
+                <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                <animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s"
+                    repeatCount="indefinite"></animateTransform>
+            </rect>
+        </svg>
     </div>
 
 
+
+    <div class="content">
+        <div class="header">
+            <main><a href="">Schedule</a></main>
+            <main><a href="">Sponsors</a></main>
+            <main><a href="">FAQ</a></main>
+            <main><a href="">Team</a></main>
+            <main><a href="">Sign Up</a></main>
+            <main><a href="">Contact Us</a></main>
+        </div>
+
+        <div class="main">
+            <h1>GIA Hacks 2024</h1>
+            <img src="/GIA-Hacks-2024/assets/images/qrcodeCanva.png" alt="">
+            <br>
+            <button class="signup" role="button">Sign Up!</button>
+            <h2>About Us</h2>
+            <p>The GIA Club Chapter at Fremont High School are the hosts for the GIAHacks event. Our aim is to
+                incorporate
+                school students in order to expose them to the latest technologies and the tech community, thereby
+                sparking
+                their interest in the field. We also want to fight global issues in the world.</p>
+        </div>
+        <div id = "check_in">
+            <ul>
+                <li>
+                    <div>
+                        <time>Monday</time>
+                        <p>Check-In and Opening Presentation at 8:00pm</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>Tuesday</time>
+                        <p>Brainstorm ideas</p>
+                        <br>
+                        <p>Check-In and presentation at 8:00pm</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>Wednesday</time>
+                        <p>Continue Working on Project</p>
+                        <br>
+                        <p>Meeting & Check-In On Progress. Mini Game #1 at 9:00pm.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>Thursday</time>   
+                        <p>Continue Working on Project</p>
+                        <br>
+                        <p>Meeting & Check-In On Progress</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>Friday</time>
+                        <p>Finish Working on Project</p>
+                        <br>
+                        <p>Film a video and make a slide presentation. Mini Game #2 at 9:00pm.</p>
+    
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>Saturday</time>
+                        <p>Finish Touches on Project</p>
+                        <br>
+                        <p>2:00 pm: Submit Project to devpost</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>Sunday</time>
+                        <p>Sponsored Mini Event</p>
+                        <br>
+                        <p>🎉Award Ceremony🎉</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    
 </body>
 
 </html>
