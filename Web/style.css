@@ -1,69 +1,126 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html {
+html{
+  scroll-behavior: smooth;
+}
 
-    height: 100%;
-    font-family: Arial, sans-serif;
+body {
+  font-family: Arial, sans-serif;
 }
 
 #bg-wrap {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
 }
 
+#patt1 path {
+  stroke: #c2c2c2;
+}
 
+#patt2 path {
+  stroke: #999999;
+}
+
+#patt3 path {
+  stroke: #404040;
+}
+
+#patt4 path {
+  stroke: #101010;
+}
+
+#mask1 rect {
+  -webkit-animation: pulse 1.90476s infinite;
+          animation: pulse 1.90476s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#mask2 rect {
+  x: 10;
+  -webkit-animation: pulse 1.90476s infinite 0.47619s;
+          animation: pulse 1.90476s infinite 0.47619s;
+  -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#squiggle1, #squiggle2, #squiggle3, #squiggle4 {
+  background-blend-mode: multiply;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    x: 10;
+  }
+  50% {
+    x: -20;
+  }
+  100% {
+    x: -50;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    x: 10;
+  }
+  50% {
+    x: -20;
+  }
+  100% {
+    x: -50;
+  }
+}
 
 .content {
-    z-index: 1;
-    color: black;
-    padding: 20px;
+  z-index: 1;
+  color: black;
+  padding: 20px;
 }
 
-
 .header a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-    width: 100px;
-    height: 500px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  width: 100px;
+  height: 500px;
 }
 
 .main {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .signup {
-    all: unset;
-    width: 100px;
-    height: 30px;
-    font-size: 16px;
-    background: transparent;
-    border: none;
-    position: relative;
-    color: #f0f0f0;
-    cursor: pointer;
-    z-index: 1;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    right: -46%;
-  }
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  right: -46%;
+}
   
   .signup::after,
   .signup::before {
@@ -126,7 +183,7 @@ body, html {
 .main a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #c9d2dc;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -279,4 +336,3 @@ ul li.show div {
     left: -289px;
   }
 }
-
